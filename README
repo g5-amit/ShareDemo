@@ -1,3 +1,6 @@
 1.) Share file from your app from internal, external and cache storage
 https://developer.android.com/training/secure-file-sharing/share-file
 
+2.) Explains How we can communicate from Android WebView to Web Pages and vice versa
+
+3.) Explains How We can create WebView Pool on App Launch instead of creating it with activity launch
