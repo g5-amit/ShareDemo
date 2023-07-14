@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <!-- Browser App packages -->
+        <package android:name="com.microsoft.emmx" />
+        <package android:name="com.android.chrome" />
+        <package android:name="org.mozilla.firefox" />
+        <package android:name="com.opera.browser" />
+        <package android:name="com.opera.mini.native" />
+        <package android:name="com.sec.android.app.sbrowser" />
+
+        <!-- Microsoft Apps -->
+        <package android:name="com.microsoft.skydrive" />
+        <package android:name="com.microsoft.office.onenote" />
+        <package android:name="com.microsoft.office.word" />
+        <package android:name="com.microsoft.office.excel" />
+        <package android:name="com.microsoft.office.powerpoint" />
+        <package android:name="com.microsoft.office.outlook" />
+        <package android:name="com.microsoft.office.outlook.dawg" />
+        <package android:name="com.microsoft.office.outlook.stg" />
+        <package android:name="com.microsoft.office.outlook.dev" />
+        <package android:name="com.microsoft.msapps" />
+        <package android:name="com.microsoft.outlookgroups" />
+        <package android:name="com.microsoft.sharepoint" />
+        <package android:name="com.microsoft.office.officehubrow" />
+        <package android:name="com.microsoft.office.officehub" />
+        <package android:name="com.microsoft.office.officehubrow.internal" />
+        <package android:name="com.microsoft.windowsintune.companyportal" />
+
+        <package android:name="com.microsoft.teams" />
+        <package android:name="com.yammer.v1" />
+        <package android:name="com.microsoft.todos" />
+        <package android:name="com.touchtype.Micswiftkey" />
+        <package android:name="com.skype.raider" />
+        <package android:name="com.microsoft.office.lync15" />
+        <package android:name="com.mobiledatalabs.mileiq" />
+        <package android:name="com.microsoft.translator" />
+        <package android:name="com.touchtype.swiftkey" />
+
+        <package android:name="com.azure.authenticator" />
+        <package android:name="com.microsoft.appmanager" />
+
+        <!-- Samsung -->
+        <package android:name="com.sec.android.app.samsungapps" />
+        <package android:name="com.samsung.android.app.reminder" />
+        <package android:name="com.samsung.android.app.notes" />
+        <package android:name="com.sec.android.app.myfiles" />
+    </queries>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CHOOSER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE" />
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE" />
+        </intent>
+        <intent>
+            <action android:name="com.microsoft.odsp.action.FEEDBACK" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".ShareApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShareDemo"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ShareDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".webview.ShareWebViewActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".webview.HeadlessBrowserWebViewActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".webview.PreLaunchWebViewActivity"
+            android:exported="false">
+        </activity>
+
+    </application>
+
+</manifest>

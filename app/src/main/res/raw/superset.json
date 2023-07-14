@@ -1,0 +1,68 @@
+{
+  "profileType": "personal/business",
+  "colorTheme": "#000000",
+  "client": "client_aap_package_name",
+  "fileType": "pdf/ppt/multipleImage/multipleVideo",
+  "viewList": [
+    {
+      "viewType": "compact_preview",
+      "title": "",
+      "iconUrl": "",
+      "apiUrl": ""
+    },
+    {
+      "viewType": "expanded_preview",
+      "title": "",
+      "icon": "",
+      "apiUrl": ""
+    },
+    {
+      "viewType": "search_view",
+      "title": "Search Chat and Channels",
+      "icon": "www.abc.com/searchIcon.png",
+      "apiUrl": "searchList.com/searchContacts"
+    },
+    {
+      "viewType": "horizontal_scroll_view",
+      "title": "Suggested",
+      "icon": "www.abc.com/suggestionListIcon.png",
+      "apiUrl": "suggestionList.com/recentSuggestedList"
+    },
+    {
+      "viewType": "horizontal_scroll_view",
+      "title": "Devices",
+      "icon": "",
+      "apiUrl": "devices.com/deviceLists"
+    },
+    {
+      "viewType": "horizontal_scroll_view",
+      "title": "Apps",
+      "icon": "",
+      "apiUrl": "apps.com/1P3P_AppLists"
+    },
+    {
+      "viewType": "horizontal_scroll_view",
+      "title": "Actions",
+      "icon": "",
+      "apiUrl": "actions.com/actionLists"
+    },
+    {
+      "viewType": "horizontal_scroll_view",
+      "title": "Apps & actions",
+      "icon": "",
+      "apiUrl": "appAndActions.com/app_actionLists"
+    },
+    {
+      "viewType": "list_item",
+      "title": "More share options",
+      "icon": "abc.com/share_icon.png",
+      "apiUrl": ""
+    },
+    {
+      "viewType": "list_item",
+      "title": "Print",
+      "icon": "abc.com/print_icon.png",
+      "apiUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShareDemo</string>
+    <string name="share_title">Share</string>
+    <string name="share_more_options">More</string>
+    <string name="launch_webview">Launch WebView</string>
+    <string name="bridge_button">Call JS Function</string>
+    <string name="headless_browser_webview">HeadLess Browser WebView</string>
+    <string name="prelaunch_webview">PreLaunch WebView</string>
+</resources>
